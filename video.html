@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Player</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: #f569e4;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			position: relative;
+			max-width: 640px;
+			margin: 50px auto;
+			padding: 0;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		video {
+			width: 100%;
+			height: auto;
+			display: block;
+			margin: 20px 0;
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgba(239, 130, 130, 0.3);
+		}
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.4);
+			border-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.overlay h2 {
+			font-size: 2rem;
+			margin: 0;
+			padding: 0;
+			line-height: 1.2;
+			text-shadow: 2px 2px #e49393;
+			color: #fff;
+		}
+
+		.description p{
+			margin: 80px;
+			padding: 50px;
+		}
+
+		h1 {
+			font-size: 5em;
+			margin-top: 100px;
+			text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #0c10e7, 0 0 100px #0f010d, 0 0 150px #400338;
+			animation: neon 1.5s ease-in-out infinite alternate;
+		}
+		@keyframes neon {
+			from {
+				text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+			}
+			to {
+				text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de, 0 0 300px #ff00de;
+			}
+		}
+
+		.button-container {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 25px;
+      }
+      button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: #1a1a1a;
+        color: #fff;
+        font-size: 1.5em;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      button:hover {
+        background-color: #fff;
+        color: #1a1a1a;
+      }
+      button span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+      }
+      button:hover span {
+        transform: scale(1.2);
+      }
+
+      .button-container {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 25px;
+      }
+
+      button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: #1a1a1a;
+        color: #fff;
+        font-size: 1.5em;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #fff;
+        color: #1a1a1a;
+      }
+
+      button span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      button:hover span {
+        transform: scale(1.2);
+      }
+	</style>
+</head>
+<body>
+
+	<h1>Happy Birthday <br> ANUSHRI 💕❤️</h1>
+
+	<div class="container">
+		<video controls autoplay>
+			<source src="birthday_video.mp4"  type="video/mp4" >
+			Your browser does not support the video tag.
+		</video>
+		<!-- <div class="overlay">
+			<h2>Video Title</h2>
+			<p>Video description goes here</p>
+		</div> -->
+		
+	</div>
+
+    <!-- <div class="description">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab sequi eaque, molestias cum itaque aperiam hic aliquam. Pariatur, incidunt autem dolorem dolores molestiae vel quisquam doloremque ullam deserunt fuga!</p>
+	</div>  -->
+
+	<div>
+		<button class="button-container"><a href="per.html"> AGAIN CLICK ME😊👆 </a></button>
+	</div>
+</body>
+</html>

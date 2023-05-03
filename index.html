@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Countdown Example</title>
+	<style>
+		body {
+			background-color: #f53b3b;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		#countdown {
+			font-size: 5em;
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Please wait, your surprise is loading 😁😁...</h1>
+	<div id="countdown">10</div>
+	<script>
+		var count = 10;
+		var countdown = setInterval(function() {
+			count--;
+			if (count == 0) {
+				clearInterval(countdown);
+				window.location.href = "button.html";
+			} else {
+				document.getElementById("countdown").innerHTML = count;
+			}
+		}, 1000);
+	</script>
+</body>
+</html>
